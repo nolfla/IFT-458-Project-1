@@ -1,12 +1,29 @@
-.navbar-inverse {
-    background-color: #cfcfc4;
-    color: black;
-}
 
-.navbar-navbar:hover {
-    background-color: white;
-}
 
-/* .navbar-inverse:active {
-    background-color: black;
-} */
+nav.navbar-custom { 
+    background: grey; 
+   }
+   nav.navbar-custom a { 
+       color: white; 
+       font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
+   }
+   nav.navbar-custom ul.navbar-nav a:hover
+    { 
+       background: #464646; 
+   }
+   nav.navbar-custom ul.navbar-nav a:focus,
+   nav.navbar-custom ul.navbar-nav-right a:active{
+   background: rgba(248,158,48,1);
+   }
+   .container {
+    border-radius: 5px;
+    background-color: #FFD264;
+    height:auto;
+    padding:10px;
+   }
+    body  {
+        background-color: #cccccc;
+        font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
+      
+    }
+    
