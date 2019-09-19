@@ -7,6 +7,7 @@
   <title>Defeat Poverty in Africa - Home</title>
   <link rel="icon" type="image/png" href="../assets/img/logos/profile.png" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/main.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
@@ -76,6 +77,18 @@
 
   </div>
 
-</body>
+  <script>
+    function showPosition() {
+      navigator.geolocation.getCurrentPosition(function (position) {
+      });
+    }
+  </script>
+
+  <body onload="showPosition();">
+
+    <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/cb7744ae/cloudflare-static/rocket-loader.min.js"
+      data-cf-settings="b65f6169cdf7012414c20eaa-|49" defer="" type="8b6c24e229a9ee2668b09a86-text/javascript"></script>
+
+  </body>
 
 </html>

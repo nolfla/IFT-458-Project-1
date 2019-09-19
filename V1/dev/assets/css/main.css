@@ -1,0 +1,11 @@
+.navbar-inverse {
+    background-color: gray;
+}
+
+.navbar-navbar:hover {
+    background-color: white;
+}
+
+/* .navbar-inverse:active {
+    background-color: black;
+} */
