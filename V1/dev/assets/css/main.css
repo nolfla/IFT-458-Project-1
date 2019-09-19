@@ -1,5 +1,6 @@
 .navbar-inverse {
-    background-color: gray;
+    background-color: #cfcfc4;
+    color: black;
 }
 
 .navbar-navbar:hover {
