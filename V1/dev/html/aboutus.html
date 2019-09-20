@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Defeat Poverty in Africa - About Us</title>
     <link rel="icon" type="image/png" href="../assets/img/logos/profile.png" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/main.css">
     <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-
     <div class="container">
         <nav class="navbar navbar-custom">
             <div class="container-fluid">
@@ -64,27 +63,39 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script>$("#myModal").draggable({ handle: ".modal-body" });</script>
 
-        <div id="logo">
-            <a href="../html/index.html"> <img src="../assets/img/logos/cover.png" class="img-responsive">
-            </a>
+
+
+        <div class="embed-responsive embed-responsive-16by9">
+            <h1>Defeat Poverty in Africa, One Donation at a Time.</h1>
+            <iframe src="https://www.youtube.com/embed/M4YE2OHgBA4" width="300" height="200" align="center">
+            </iframe>
         </div>
 
-        <div class="text-center">
-            <h1>
-                "Saving One Life At A Time!"
-            </h1>
+        <div class="videoWrapper">
+            <!-- Copy & Pasted from YouTube -->
+            <iframe width="560" height="349" src="http://www.youtube.com/embed/n_dZNLr2cME?rel=0&hd=1" frameborder="0"
+                allowfullscreen></iframe>
         </div>
 
-        <div id="aboutus">
-            <h3>About Us</h3>
-            <p>We are a non-profit dedicated to ending poverty in Africa one meal at a time. We are able to do this
-                through
-                both private donations and those from corporations done in kind.</p>
-        </div>
 
-        <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/cb7744ae/cloudflare-static/rocket-loader.min.js"
-            data-cf-settings="b65f6169cdf7012414c20eaa-|49" defer=""
-            type="8b6c24e229a9ee2668b09a86-text/javascript"></script>
+
+        <script>
+            function showPosition() {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                });
+            }
+        </script>
+
+        <body onload="showPosition();">
+
+            <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/cb7744ae/cloudflare-static/rocket-loader.min.js"
+                data-cf-settings="b65f6169cdf7012414c20eaa-|49" defer=""
+                type="8b6c24e229a9ee2668b09a86-text/javascript"></script>
+    </div>
+
+
+
+
 </body>
 
 </html>
