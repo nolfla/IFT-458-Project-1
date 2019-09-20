@@ -27,4 +27,70 @@ nav.navbar-custom {
         font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
       
     }
+    input[type=text], input[type=password] {
+        width: 95%;
+        padding: 12px 20px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
+        }
+        button {
+        background-color: grey;
+        color: white;
+        padding: 5px 10px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 95%;
+        font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
+        }
+        img.logo {
+        width: 350px;
+        height:350px;
+        border-radius: 50%;
+        border: 3px solid grey;
+        margin: 10px;
+        overflow: auto;
+        }
+        .logincontainer {
+        text-align: center;
+        }
+        #uname{
+        margin-left:11px;
+        text-align:left;
+        font-size:16px;
+        }
+        #pword{
+        margin-left:11px;
+        text-align:left;
+        font-size:16px;
+        }
+        .infocontainer {
+        color: black;
+        }
+        span.psw {
+        float: right;  
+        }
+        /* Login Form (background) */
+        .loginform {
+        overflow: auto; /* Enable scroll if needed */
+        background-color: white; /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        }
+        .login-content {
+        background: rgba(248,158,48,1);
+        }  
+        .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+        }
+        @-webkit-keyframes animatezoom {
+        from {-webkit-transform: scale(0)}
+        to {-webkit-transform: scale(1)}
+        }  
+        @keyframes animatezoom {
+        from {transform: scale(0)}
+        to {transform: scale(1)}
+        }
     
