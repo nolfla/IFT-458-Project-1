@@ -1,126 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Defeat Poverty in Africa - Home</title>
-  <link rel="icon" type="image/png" href="../assets/img/logos/profile.png" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../assets/css/main.css">
-  <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-</head>
-
-<body>
-  <div class="container">
-    <nav class="navbar navbar-custom">
-      <div class="container-fluid">
-
-        <ul class="nav navbar-nav">
-          <li><a href="../html/index.html">Home</a></li>
-          <li><a href="../html/aboutus.html">About Us</a></li>
-          <li><a href="https://paypal.com" target="_blank">Donate</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="../html/registrationform.html"><span class="glyphicon glyphicon-user"></span> Sign
-              Up</a></li>
-          <li><a href="" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span>
-              Login</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-
-          <form class="login-content animate" action="">
-            <div class="modal-body">
-              <a href="../html/index.html"> <img src="../assets/img/logos/cover.png" class="img-responsive"><br>
-
-
-                <label for="uname" id="uname"><b>Username:</b></label>
-                <input type="text" placeholder="Enter Username" name="uname" required><br>
-                <label for="psw" id="pword"><b>Password:</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Defeat Poverty in Africa - Home</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../assets/css/main.css">
+      <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   </head>
+   <body>
+      <div class="container">
+         <nav class="navbar navbar-custom">
+            <div class="container-fluid">
+               <ul class="nav navbar-nav">
+                  <li><a href="../html/index.html">Home</a></li>
+                  <li><a href="../html/aboutus.html">About Us</a></li>
+                  <li><a href="https://paypal.com" target="_blank">Donate</a></li>
+               </ul>
+               <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="../html/registrationform.html"><span class="glyphicon glyphicon-user"></span> Sign
+                     Up</a>
+                  </li>
+                  <li><a href=""id="modBtn" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+               </ul>
             </div>
-          </form>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Login</button>
-          </div>
-        </div>
+         </nav>
+         <div class="modal fade" id="myModal" tabindex="1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+               <div class="modal-content">
+                  <form class="login-content animate">
+                     <div class="modal-body">
+                  <form role="form" name="form1">
+                  <div class="form-group" >
+                  <img src="../assets/img/logos/cover.png" class="img-responsive"><br>
+                  <label for="exampleInputEmail1">Username:</label><br>
+                  <input oninvalid="alert('Hey, you missed something on modal!')" onkeyup="checkForm()" id="uname" required type="text" name ='text1' class="form-control" placeholder="Enter Username" />
+                  </div>
+                  <div class="form-group" >
+                  <label for="exampleInputPassword1">Password:</label><br>
+                  <input oninvalid="alert('Hey, you missed something on modal!')" onkeyup="checkForm()" id="pword" required type="password" class="form-control" placeholder="Enter Password" />
+                  </div>
+                  <input type="submit" onclick="myFunction()" class="btn btn-block" id="myButton" name="submit" value="Submit"  disabled="disabled"/>
+                  </form>
+                  </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+         <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+         <script>$("#myModal").draggable({ handle: ".modal-body" });</script>
+         <script>
+            function myFunction() {
+                alert("You are now logged in");
+            }
+         </script>
+         <script>
+            function checkForm()
+            {
+                var elements = document.forms[0].elements;
+            
+                var cansubmit= true;
+                for(var i = 0; i < elements.length; i++)
+                {
+                    if(elements[i].value.length == 0 && elements[i].type != "submit")
+                    {
+                        cansubmit = false;
+                    }
+                }
+                document.getElementById("myButton").disabled = !cansubmit;  
+            };      
+         </script>
+         <div id="logo">
+            <a href="../html/index.html"> <img src="../assets/img/logos/cover.png" class="img-responsive">
+            </a>
+         </div>
+         <div class="row">
+            <div class="col-sm-4">
+               <h3>History</h3>
+               <p>We were founded in 1998 in Gilbert, Arizona by a group of people in the community who wanted to make the lives of people in Africa better by providing them with meals to help reduce poverty.</p>
+            </div>
+            <div class="col-sm-4">
+               <h3>About Us</h3>
+               <p>We are a non-profit based in Arizona dedicated to defeating poverty one meal at a time.</p>
+            </div>
+            <div class="col-sm-4">
+               <h3>Donations</h3>
+               <p>Through your donation, we are able to provide meals to people in Africa to help alleviate poverty. Another way that we are able to drive down costs for the food is through corporate partnerships that we have that allow for them to give
+                  us a discount when we buy in bulk from them and donations of food in kind.
+               </p>
+            </div>
+         </div>
+         <div class="text-center">
+            <h1>
+               "Saving One Life At A Time!"
+            </h1>
+            <img src="https://cdn.discordapp.com/attachments/621479250729500702/624198895869886484/african_child.jpg" class="img-rounded" width="300" height="236">
+            <img src="http://www.foodaidfoundation.org/uploads/8/2/3/0/82301020/hunger-stats_orig.jpg" class="img-rounded" width="300" height="236">
+            <img src="https://yt3.ggpht.com/a/AGF-l797tWe80S4zaqcjxr3Lcdno4RUiym38yfZWVA=s900-c-k-c0xffffffff-no-rj-mo" class="img-rounded" width="300" height="236">
+         </div>
+         <script>
+            function showPosition() {
+                navigator.geolocation.getCurrentPosition(function(position) {});
+            }
+         </script>
+         <body onload="showPosition();">
+            <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/cb7744ae/cloudflare-static/rocket-loader.min.js" data-cf-settings="b65f6169cdf7012414c20eaa-|49" defer="" type="8b6c24e229a9ee2668b09a86-text/javascript"></script>
       </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script>$("#myModal").draggable({ handle: ".modal-body" });</script>
-
-    <div id="logo">
-
-      <a href="../html/index.html"> <img src="../assets/img/logos/cover.png" class="img-responsive">
-      </a>
-    </div>
-
-
-
-
-    <div class="row">
-      <div class="col-sm-4">
-        <h3>History</h3>
-        <p>We were founded in 1998 in Gilbert, Arizona by a group of people in the community who wanted to make the
-          lives of people in Africa better by providing them with meals to help reduce poverty.</p>
-
-      </div>
-      <div class="col-sm-4">
-        <h3>About Us</h3>
-
-        <p>We are a non-profit based in Arizona dedicated to defeating poverty one meal at a time.</p>
-
-      </div>
-      <div class="col-sm-4">
-        <h3>Donations</h3>
-        <p>Through your donation, we are able to provide meals to people in Africa to help alleviate poverty. Another
-          way that we are able to drive down costs for the food is through corporate partnerships that we have that
-          allow for them to give us a discount
-          when we buy in bulk from them and donations of food in kind.</p>
-      </div>
-    </div>
-    <div class="text-center">
-      <h1>
-        "Saving One Life At A Time!"
-      </h1>
-      <img src="https://cdn.discordapp.com/attachments/621479250729500702/624198895869886484/african_child.jpg"
-        class="img-rounded" width="300" height="236">
-      <img src="http://www.foodaidfoundation.org/uploads/8/2/3/0/82301020/hunger-stats_orig.jpg" class="img-rounded"
-        width="300" height="236">
-      <img src="https://yt3.ggpht.com/a/AGF-l797tWe80S4zaqcjxr3Lcdno4RUiym38yfZWVA=s900-c-k-c0xffffffff-no-rj-mo"
-        class="img-rounded" width="300" height="236">
-
-    </div>
-
-
-    <script>
-      function showPosition() {
-        navigator.geolocation.getCurrentPosition(function (position) {
-        });
-      }
-    </script>
-
-    <body onload="showPosition();">
-
-      <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/cb7744ae/cloudflare-static/rocket-loader.min.js"
-        data-cf-settings="b65f6169cdf7012414c20eaa-|49" defer=""
-        type="8b6c24e229a9ee2668b09a86-text/javascript"></script>
-  </div>
-
-
-
-
-</body>
-
+   </body>
 </html>
