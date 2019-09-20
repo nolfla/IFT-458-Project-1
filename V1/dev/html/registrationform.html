@@ -1,265 +1,292 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-      <style>
-         body {
-         font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
+
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Defeat Poverty in Africa - Registration</title>
+   <link rel="icon" type="image/png" href="../assets/img/logos/profile.png" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <style>
+      body {
+         font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
          background: grey;
-         color:white;
-         font-size:18px;
-         }
-         * {
+         color: white;
+         font-size: 18px;
+      }
+
+      * {
          box-sizing: border-box;
-         }
-         /* Style inputs */
-         input[type=text],
-         input[type=number],
-         input[type=email],
-         input[type=date],
-         select
-         {
-         color:black;
+      }
+
+      /* Style inputs */
+      input[type=text],
+      input[type=number],
+      input[type=email],
+      input[type=date],
+      select {
+         color: black;
          width: 100%;
          padding: 12px;
          border: 1px solid #ccc;
          margin-top: 6px;
          margin-bottom: 16px;
-         font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif; 
-         }
-         input[type=radio] {
+         font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
+      }
+
+      input[type=radio] {
          border: 0px;
          width: 10%;
          height: 1.1em;
-         }
-         input[type=submit] {
-         font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
-         background-color:grey;
+      }
+
+      input[type=submit] {
+         font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
+         background-color: grey;
          color: white;
          padding: 12px 20px;
          border: none;
          cursor: pointer;
-         font-size:16px;
-         }
-         input[type=submit]:hover {
-         background-color:#484848
-         }
-         /* Style the container/contact section */
-         .container {
+         font-size: 16px;
+      }
+
+      input[type=submit]:hover {
+         background-color: #484848
+      }
+
+      /* Style the container/contact section */
+      .container {
          border-radius: 5px;
-         background: rgba(248,158,48,1);
+         background: rgba(248, 158, 48, 1);
          padding: 10px;
-         }
-         /* Create two columns that float next to eachother */
-         .column {
+      }
+
+      /* Create two columns that float next to eachother */
+      .column {
          float: left;
          width: 50%;
          margin-top: 6px;
          padding: 20px;
-         }
-         /* Clear floats after the columns */
-         .row:after {
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
          content: "";
          display: table;
          clear: both;
-         }
-         /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-         @media screen and (max-width: 600px) {
+      }
+
+      /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+
          .column,
          input[type=submit] {
-         width: 100%;
-         margin-top: 0
+            width: 100%;
+            margin-top: 0
          }
-         }
-         #stSelect{
-         height:45px;
+      }
+
+      #stSelect {
+         height: 45px;
          margin-bottom: 20px;
-         }
-         #state{
+      }
+
+      #state {
          margin-bottom: 10px;
-         }
-         #dob{
-         height:45px;
-         }
-         #rad{
-         height:20px;
-         margin-bottom:23px;
-         }
-         #submit{
-         margin-top:10px;
+      }
+
+      #dob {
+         height: 45px;
+      }
+
+      #rad {
+         height: 20px;
+         margin-bottom: 23px;
+      }
+
+      #submit {
+         margin-top: 10px;
          width: 100%;
-         height:45px;
-         }
-         nav.navbar-custom { 
-         background: grey; 
-         }
-         nav.navbar-custom a { 
-         color: white; 
-         font-family: Palatino,Palatino Linotype,Palatino LT STD,Book Antiqua,Georgia,serif;
-         }
-         nav.navbar-custom ul.navbar-nav a:hover,
-         nav.navbar-custom ul.navbar-nav a:active { 
-         background: #464646; 
-         }
-         nav.navbar-custom ul.navbar-nav a:focus{
-         background: rgba(248,158,48,1);  
-         }
-      </style>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-      <link rel="stylesheet" href="../assets/css/main.css">
-      <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-   </head>
-   <body>
-      <div class="container">
-         <nav class="navbar navbar-custom">
-            <div class="container-fluid">
-               <ul class="nav navbar-nav">
-                  <li><a href="../html/index.html">Home</a></li>
-                  <li><a href="../html/aboutus.html">About Us</a></li>
-                  <li><a href="https://paypal.com" target="_blank">Donate</a></li>
-               </ul>
-               <ul class="nav navbar-nav navbar-right">
-                  <li class="active"><a href="../html/registrationform.html"><span class="glyphicon glyphicon-user"></span> Sign
+         height: 45px;
+      }
+
+      nav.navbar-custom {
+         background: grey;
+      }
+
+      nav.navbar-custom a {
+         color: white;
+         font-family: Palatino, Palatino Linotype, Palatino LT STD, Book Antiqua, Georgia, serif;
+      }
+
+      nav.navbar-custom ul.navbar-nav a:hover,
+      nav.navbar-custom ul.navbar-nav a:active {
+         background: #464646;
+      }
+
+      nav.navbar-custom ul.navbar-nav a:focus {
+         background: rgba(248, 158, 48, 1);
+      }
+   </style>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="../assets/css/main.css">
+   <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+   <div class="container">
+      <nav class="navbar navbar-custom">
+         <div class="container-fluid">
+            <ul class="nav navbar-nav">
+               <li><a href="../html/index.html">Home</a></li>
+               <li><a href="../html/aboutus.html">About Us</a></li>
+               <li><a href="https://paypal.com" target="_blank">Donate</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+               <li class="active"><a href="../html/registrationform.html"><span class="glyphicon glyphicon-user"></span>
+                     Sign
                      Up</a>
-                  </li>
-                  <li><a href=""id="modBtn" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-               </ul>
-            </div>
-         </nav>
-         <div class="modal fade" id="myModal" tabindex="1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-               <div class="modal-content">
-                  <form class="login-content animate">
-                     <div class="modal-body">
-                  <form role="form" name="form1">
-                  <div class="form-group" >
-                  <img src="../assets/img/logos/cover.png" class="img-responsive"><br>
-                  <label for="exampleInputEmail1">Username:</label><br>
-                  <input oninvalid="alert('Hey, you missed something on modal!')" onkeyup="checkForm()" id="uname" required type="text" name ='text1' class="form-control" placeholder="Enter Username" />
+               </li>
+               <li><a href="" id="modBtn" data-toggle="modal" data-target="#myModal"><span
+                        class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+         </div>
+      </nav>
+      <div class="modal fade" id="myModal" tabindex="1" role="dialog" aria-labelledby="myModalLabel">
+         <div class="modal-dialog" role="document">
+            <div class="modal-content">
+               <form class="login-content animate">
+                  <div class="modal-body">
+                     <form role="form" name="form1">
+                        <div class="form-group">
+                           <img src="../assets/img/logos/cover.png" class="img-responsive"><br>
+                           <label for="exampleInputEmail1">Username:</label><br>
+                           <input oninvalid="alert('Hey, you missed something on modal!')" onkeyup="checkForm()"
+                              id="uname" required type="text" name='text1' class="form-control"
+                              placeholder="Enter Username" />
+                        </div>
+                        <div class="form-group">
+                           <label for="exampleInputPassword1">Password:</label><br>
+                           <input oninvalid="alert('Hey, you missed something on modal!')" onkeyup="checkForm()"
+                              id="pword" required type="password" class="form-control" placeholder="Enter Password" />
+                        </div>
+                        <input type="submit" onclick="myFunction()" class="btn btn-block" id="myButton" name="submit"
+                           value="Submit" disabled="disabled" />
+                     </form>
                   </div>
-                  <div class="form-group" >
-                  <label for="exampleInputPassword1">Password:</label><br>
-                  <input oninvalid="alert('Hey, you missed something on modal!')" onkeyup="checkForm()" id="pword" required type="password" class="form-control" placeholder="Enter Password" />
-                  </div>
-                  <input type="submit" onclick="myFunction()" class="btn btn-block" id="myButton" name="submit" value="Submit"  disabled="disabled"/>
-                  </form>
-                  </div>
-                  </form>
-               </div>
+               </form>
             </div>
          </div>
-         <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-         <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-         <script>$("#myModal").draggable({ handle: ".modal-body" });</script>
-         <script>
-            function myFunction() {
-                alert("You are now logged in");
+      </div>
+      <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+      <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+      <script>$("#myModal").draggable({ handle: ".modal-body" });</script>
+      <script>
+         function myFunction() {
+            alert("You are now logged in");
+         }
+      </script>
+      <script>
+         function checkForm() {
+            var elements = document.forms[0].elements;
+
+            var cansubmit = true;
+            for (var i = 0; i < elements.length; i++) {
+               if (elements[i].value.length == 0 && elements[i].type != "submit") {
+                  cansubmit = false;
+               }
             }
-         </script>
-         <script>
-            function checkForm()
-            {
-                var elements = document.forms[0].elements;
-            
-                var cansubmit= true;
-                for(var i = 0; i < elements.length; i++)
-                {
-                    if(elements[i].value.length == 0 && elements[i].type != "submit")
-                    {
-                        cansubmit = false;
-                    }
-                }
-                document.getElementById("myButton").disabled = !cansubmit;  
-            };      
-         </script>
-         <div style="text-align:center">
-            <h1>Registration Form</h1>
-            <p >Please fill out the form below to register for an account</p>
+            document.getElementById("myButton").disabled = !cansubmit;
+         };      
+      </script>
+      <div style="text-align:center">
+         <h1>Registration Form</h1>
+         <p>Please fill out the form below to register for an account</p>
+      </div>
+      <div class="row">
+         <div class="column">
+            <form action="/action_page.php">
+               <label for="uname">Username</label>
+               <input type="text" id="uname" name="username" maxlength="8" placeholder="No more than 8 characters"
+                  required>
+               <label for="pword">Password</label>
+               <input type="text" id="pword" name="password" maxlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{,8}"
+                  placeholder="Password must have a digit, lowercase letter, and uppercase letter.." required>
+               <label for="fname">First name</label>
+               <input type="text" id="fname" name="firstname" placeholder="First name..">
+               <label for="mname">Middle name</label>
+               <input type="text" id="mname" name="middlename" placeholder="Middle name..">
+               <label for="lname">Last name</label>
+               <input type="text" id="lname" name="lastname" placeholder="Last name.." required>
+               <label for="gender">Gender</label><br>
+               <input type="radio" id="rad" name="gender" value="male" required> Male
+               <input type="radio" id="rad" name="gender" value="female"> Female
+               <input type="radio" id="rad" name="gender" value="other"> Other<br><br>
+               <label for="dob" id="lbDob">Date of Birth</label>
+               <input type="date" id="dob" name="dob" placeholder="DOB.." required>
+               <label for="organization">Member Organization</label>
+               <input type="text" id="organization" name="organization" placeholder="Organization..">
          </div>
-         <div class="row">
-            <div class="column">
-               <form action="/action_page.php">
-                  <label for="uname">Username</label>
-                  <input type="text" id="uname" name="username" maxlength="8" placeholder="No more than 8 characters" required>
-                  <label for="pword">Password</label>
-                  <input type="text" id="pword" name="password" maxlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{,8}" placeholder="Password must have a digit, lowercase letter, and uppercase letter.." required>
-                  <label for="fname">First name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="First name..">
-                  <label for="mname">Middle name</label>
-                  <input type="text" id="mname" name="middlename" placeholder="Middle name..">
-                  <label for="lname">Last name</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Last name.." required>
-                  <label for="gender">Gender</label><br>
-                  <input type="radio" id="rad" name="gender" value="male" required> Male
-                  <input type="radio" id="rad" name="gender" value="female"> Female
-                  <input type="radio" id="rad" name="gender" value="other"> Other<br><br>
-                  <label for="dob" id="lbDob">Date of Birth</label>
-                  <input type="date" id="dob" name="dob" placeholder="DOB.." required>
-                  <label for="organization">Member Organization</label>
-                  <input type="text" id="organization" name="organization" placeholder="Organization..">
-            </div>
-            <div class="column">
+         <div class="column">
             <label for="address">Street Address</label>
             <input type="text" id="address" name="address" placeholder="123 Gilbert Rd.." required>
             <label for="city">City</label>
             <input type="text" id="city" name="city" placeholder="Gilbert.." required>
-            <label for="fname" id="state">State</label> 
+            <label for="fname" id="state">State</label>
             <select name="state" id="stSelect" required>
-            <option selected="true" value="disabled" disabled>-----------------</option>          
-            <option value="AL">AL</option>
-            <option value="AK">AK</option>
-            <option value="AZ">AZ</option>
-            <option value="AR">AR</option>
-            <option value="CA">CA</option>
-            <option value="CO">CO</option>
-            <option value="CT">CT</option>
-            <option value="DE">DE</option>
-            <option value="FL">FL</option>
-            <option value="GA">GA</option>
-            <option value="HI">HI</option>
-            <option value="ID">ID</option>
-            <option value="IL">IL</option>
-            <option value="IN">IN</option>
-            <option value="IA">IA</option>
-            <option value="KS">KS</option>
-            <option value="KY">KY</option>
-            <option value="LA">LA</option>
-            <option value="ME">ME</option>
-            <option value="MD">MD</option>
-            <option value="MA">MA</option>
-            <option value="MI">MI</option>
-            <option value="MN">MN</option>
-            <option value="MS">MS</option>
-            <option value="MO">MO</option>
-            <option value="MT">MT</option>
-            <option value="NE">NE</option>
-            <option value="NV">NV</option>
-            <option value="NH">NH</option>
-            <option value="NJ">NJ</option>
-            <option value="NM">NM</option>
-            <option value="NY">NY</option>
-            <option value="NC">NC</option>
-            <option value="ND">ND</option>
-            <option value="OH">OH</option>
-            <option value="OK">OK</option>
-            <option value="OR">OR</option>
-            <option value="PA">PA</option>
-            <option value="RI">RI</option>
-            <option value="SC">SC</option>
-            <option value="SD">SD</option>
-            <option value="TN">TN</option>
-            <option value="TX">TX</option>
-            <option value="UT">UT</option>
-            <option value="VT">VT</option>
-            <option value="VA">VA</option>
-            <option value="WA">WA</option>
-            <option value="WV">WV</option>
-            <option value="WI">WI</option>
-            <option value="WY">WY</option>
+               <option selected="true" value="disabled" disabled>-----------------</option>
+               <option value="AL">AL</option>
+               <option value="AK">AK</option>
+               <option value="AZ">AZ</option>
+               <option value="AR">AR</option>
+               <option value="CA">CA</option>
+               <option value="CO">CO</option>
+               <option value="CT">CT</option>
+               <option value="DE">DE</option>
+               <option value="FL">FL</option>
+               <option value="GA">GA</option>
+               <option value="HI">HI</option>
+               <option value="ID">ID</option>
+               <option value="IL">IL</option>
+               <option value="IN">IN</option>
+               <option value="IA">IA</option>
+               <option value="KS">KS</option>
+               <option value="KY">KY</option>
+               <option value="LA">LA</option>
+               <option value="ME">ME</option>
+               <option value="MD">MD</option>
+               <option value="MA">MA</option>
+               <option value="MI">MI</option>
+               <option value="MN">MN</option>
+               <option value="MS">MS</option>
+               <option value="MO">MO</option>
+               <option value="MT">MT</option>
+               <option value="NE">NE</option>
+               <option value="NV">NV</option>
+               <option value="NH">NH</option>
+               <option value="NJ">NJ</option>
+               <option value="NM">NM</option>
+               <option value="NY">NY</option>
+               <option value="NC">NC</option>
+               <option value="ND">ND</option>
+               <option value="OH">OH</option>
+               <option value="OK">OK</option>
+               <option value="OR">OR</option>
+               <option value="PA">PA</option>
+               <option value="RI">RI</option>
+               <option value="SC">SC</option>
+               <option value="SD">SD</option>
+               <option value="TN">TN</option>
+               <option value="TX">TX</option>
+               <option value="UT">UT</option>
+               <option value="VT">VT</option>
+               <option value="VA">VA</option>
+               <option value="WA">WA</option>
+               <option value="WV">WV</option>
+               <option value="WI">WI</option>
+               <option value="WY">WY</option>
             </select>
             <label for="zipcode" id="zip">Zip Code</label>
             <input type="text" id="zipInput" name="firstname" placeholder="Zip Code.." required>
@@ -271,8 +298,9 @@
             <input type="text" id="country" name="country" placeholder="Country.." required>
             <br><br><input type="submit" id="submit" value="Submit">
             </form>
-            </div>
          </div>
       </div>
-   </body>
+   </div>
+</body>
+
 </html>
